@@ -1,8 +1,8 @@
 using System.Collections;
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class KeyInput : MonoBehaviour
+public class ButtonInput : MonoBehaviour
 {
     public Image graphic;
     public Sprite standard;
@@ -12,7 +12,6 @@ public class KeyInput : MonoBehaviour
     public Text boolDisplay1;
     public Text boolDisplay2;
     public Text boolDisplay3;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,17 +21,22 @@ public class KeyInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool down = Input.GetKeyDown(KeyCode.Space);
-        bool held = Input.GetKeyDown(KeyCode.Space);
-        bool up = Input.GetKeyDown(KeyCode.Space);
+        bool down = Input.GetButtonDown("Jump");
+        bool held = Input.GetButton("Jump");
+        bool up = Input.GetButtonUp("Jump");
 
         if (down)
         {
             graphic.sprite = downgfx;
+
+        }
+        else if (held)
+        {
+            graphic.sprite = heldgfx;
         }
         else if (up)
         {
-            graphic.sprite = heldgfx;
+            graphic.sprite = upgfx;
         }
         else
         {
