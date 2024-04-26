@@ -227,7 +227,6 @@ GameObject:
   - component: {fileID: 393567836}
   - component: {fileID: 393567835}
   - component: {fileID: 393567834}
-  - component: {fileID: 393567833}
   - component: {fileID: 393567838}
   m_Layer: 0
   m_Name: Sphere
@@ -236,19 +235,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &393567833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393567832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd7f107216d2551449938d66ffb08d2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  players: []
 --- !u!135 &393567834
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -374,7 +360,6 @@ GameObject:
   - component: {fileID: 675450775}
   - component: {fileID: 675450774}
   - component: {fileID: 675450773}
-  - component: {fileID: 675450772}
   - component: {fileID: 675450777}
   m_Layer: 0
   m_Name: Cylinder
@@ -383,22 +368,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &675450772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675450771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd7f107216d2551449938d66ffb08d2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  players:
-  - {fileID: 1456807673}
-  - {fileID: 393567832}
-  - {fileID: 675450771}
 --- !u!136 &675450773
 CapsuleCollider:
   m_ObjectHideFlags: 0
