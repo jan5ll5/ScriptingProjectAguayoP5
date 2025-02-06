@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class NewBehaviourScript
+public class Player
 {
     //Member variables can be referred to as
     //fields.
